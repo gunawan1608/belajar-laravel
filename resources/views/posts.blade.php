@@ -16,9 +16,13 @@
                     <p class="text-gray-700 mb-4 text-justify">{{ Str::limit($post->body, 150) }}</p>
                     <div class="flex items-center">
                         <div class="flex items-center space-x-4">
-                            <p class="text-gray-500 text-xs">Tags:</p>
-                            <a href="#"
-                                class="bg-gray-300 text-gray-800 text-xs py-1 px-3 rounded-full hover:bg-gray-800 hover:text-white">{{ $post->tags }}</a>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs">Tags:</p>
+                            @foreach ($post->categories as $category)
+                            <a href="/categories/{{$category->slug}}"
+                                class="bg-gray-300 text-gray-800 dark:bg-gray-700 dark:text-gray-200 text-xs py-1 px-3 rounded-full hover:bg-gray-800 hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">
+                                {{$category->name}}
+                            </a>
+                            @endforeach
                         </div>
                     </div>
                 </div>

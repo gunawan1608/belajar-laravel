@@ -2,6 +2,7 @@
 
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 
@@ -44,6 +45,14 @@ Route::get('/author/{user:username}', function(User $user){
         'title' => 'Halaman Penulis : ' .
         $user->name,
         'posts' => $user->posts
+    ]);
+});
+
+Route::get('/categories/{category:slug}', function(Category $category){
+    return view('posts', [
+        'title' => 'Category : ' .
+        $category->name,
+        'posts' => $category->posts
     ]);
 });
 
