@@ -97,7 +97,7 @@
                         </h3>
                         <div class="space-y-6 text-gray-200 font-body text-base leading-relaxed">
                             <p class="scroll-fade-in-paragraph" style="animation-delay: 0.2s;">
-                                Halo, aku Gunawan Madia Pratama — seorang pelajar XI-RPL di SMK Negeri 1 Jakarta yang jatuh cinta pada dunia teknologi sejak dini.
+                                Halo, aku Gunawan Madia Pratama — seorang pelajar XII-RPL di SMK Negeri 1 Jakarta yang jatuh cinta pada dunia teknologi sejak dini.
                                 Perjalananku di dunia IT dimulai dari rasa penasaran kecil: bagaimana sebuah aplikasi, website, atau game bisa bekerja di balik layar.
                             </p>
                             <p class="scroll-fade-in-paragraph" style="animation-delay: 0.4s;">
